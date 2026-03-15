@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://c8icss75le8mq"]
+
+[ext_resource type="Script" uid="uid://bp0m2fw78xeou" path="res://main.gd" id="1_ig7tw"]
+
+[node name="main" type="Node2D" unique_id=1988323945]
+script = ExtResource("1_ig7tw")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=366055120]
+offset_right = 1154.0
+offset_bottom = 646.0
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="HBoxContainer" unique_id=1107108803]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="SubViewport" type="SubViewport" parent="HBoxContainer/SubViewportContainer" unique_id=396468501]
+
+[node name="Camera2D" type="Camera2D" parent="HBoxContainer/SubViewportContainer/SubViewport" unique_id=1920222071]
+
+[node name="SubViewportContainer2" type="SubViewportContainer" parent="HBoxContainer" unique_id=1922185662]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="SubViewport" type="SubViewport" parent="HBoxContainer/SubViewportContainer2" unique_id=833147361]
+size = Vector2i(575, 646)
+
+[node name="Camera2D" type="Camera2D" parent="HBoxContainer/SubViewportContainer2/SubViewport" unique_id=527294745]
